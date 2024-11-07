@@ -237,12 +237,12 @@ jobs:
 
       - name: Upload to PyPi prod
         if: ${{ !inputs.skip_pypi }}
-        uses: pypa/gh-action-pypi-publish@f5622bde02b04381239da3573277701ceca8f6a0 # v1.8.7
+        uses: pypa/gh-action-pypi-publish@15c56dba361d8335944d31a2ecd17d700fc7bcbc # v1.12.2
 
       # PyPi test maintenance affected us numerous times, leaving for history purposes
       # - name: Upload to PyPi test
       #   if: ${{ !inputs.skip_pypi }}
-      #   uses: pypa/gh-action-pypi-publish@f5622bde02b04381239da3573277701ceca8f6a0 # v1.8.7
+      #   uses: pypa/gh-action-pypi-publish@15c56dba361d8335944d31a2ecd17d700fc7bcbc # v1.12.2
       #   with:
       #     repository-url: https://test.pypi.org/legacy/
 
